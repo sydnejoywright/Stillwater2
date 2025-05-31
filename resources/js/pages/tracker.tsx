@@ -24,10 +24,10 @@ const New: FC = () => {
         {/* Row 1 */}
         <div className="flex items-center space-x-2 whitespace-nowrap">
           <span className="text-green-700 font-bold w-6 text-left">-</span>
-          <span className="text-blue-500">[Saturday May 31]</span>
-          <span className="text-purple-500">[Morning]</span>
-          <span className="text-pink-500">[Anna's Small Group]</span>
-          <span className="text-yellow-600">[Evan:]</span>
+          <span className="text-blue-500">Saturday May 31</span>
+          <span className="text-purple-500">Morning</span>
+          <span className="text-pink-500">Anna's Small Group</span>
+          <span className="text-yellow-600">Evan:</span>
           <input
             type="text"
             placeholder="Write Note"
@@ -45,10 +45,10 @@ const New: FC = () => {
         {/* Row 2 */}
         <div className="flex items-center space-x-2 whitespace-nowrap">
           <span className="text-green-700 font-bold w-6 text-left">-</span>
-          <span className="text-blue-500">[Sunday June 1]</span>
-          <span className="text-purple-500">[Afternoon]</span>
-          <span className="text-pink-500">[Ben's Big Group]</span>
-          <span className="text-yellow-600">[Sarah:]</span>
+          <span className="text-blue-500">Sunday June 1</span>
+          <span className="text-purple-500">Afternoon</span>
+          <span className="text-pink-500">Big Group</span>
+          <span className="text-yellow-600">Sarah:</span>
           <input
             type="text"
             placeholder="Write Note"
@@ -66,10 +66,10 @@ const New: FC = () => {
         {/* Row 3 */}
         <div className="flex items-center space-x-2 whitespace-nowrap">
           <span className="text-green-700 font-bold w-6 text-left">-</span>
-          <span className="text-blue-500">[Monday June 2]</span>
-          <span className="text-purple-500">[Evening]</span>
-          <span className="text-pink-500">[Cindy's Workshop]</span>
-          <span className="text-yellow-600">[Mike:]</span>
+          <span className="text-blue-500">Monday June 2</span>
+          <span className="text-purple-500">Evening</span>
+          <span className="text-pink-500">Ranch</span>
+          <span className="text-yellow-600">Mike:</span>
           <input
             type="text"
             placeholder="Write Note"
