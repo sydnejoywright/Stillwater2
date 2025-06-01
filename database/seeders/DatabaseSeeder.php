@@ -13,6 +13,8 @@ use App\Models\Group;
 use App\Models\SessionHistory;
 use App\Models\ClientSession;
 use App\Models\SessionStaff;
+use App\Models\GroupSchedule;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -83,13 +85,21 @@ class DatabaseSeeder extends Seeder
                 'day_time' => 'Morning',
             ]));
         }
+        //create a group schedule for the first group
+        $schedule = GroupSchedule::create([
+            'group_id' => 1,
+            'day_of_week' => 'Saturday',
+            'start_time' => '08:00',
+            'end_time' => '09:00',
+        ]);
+        
 
         // 7. Create 5 sessions led by employee[1]
         $sessions = collect();
         for ($i = 1; $i <= 5; $i++) {
             $sessions->push(SessionHistory::create([
-                'leader_id' => $employees[1]->id,
-                'group_id' => $groups->random()->id,
+               'leader_id' => 2,
+                'group_schedule_id' => $schedule->id,
                 'start_time' => '08:00',
                 'end_time' => '09:00',
                 'shift_note_complete' => true,
